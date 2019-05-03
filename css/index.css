@@ -202,6 +202,24 @@ p {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
+.home .walk .walk-text .btn {
+  background: #22283A;
+  color: #FFFFFF;
+  font-size: 2rem;
+  width: 100px;
+  text-align: center;
+  padding: 8px 0 7px;
+  border-radius: 5px;
+}
+.home .walk .walk-text .btn:hover {
+  background: #FFFFFF;
+  color: #22283A;
+  font-size: 2rem;
+  width: 100px;
+  text-align: center;
+  padding: 8px 0 7px;
+  border-radius: 5px;
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;

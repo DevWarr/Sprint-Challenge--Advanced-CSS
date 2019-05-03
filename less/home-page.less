@@ -58,6 +58,10 @@
       }
 
       .btn {
+        .btn-properties(@btn-bg-color, @white);
+        &:hover {
+          .btn-properties(@white, @btn-bg-color);
+        }
       }
     }
 

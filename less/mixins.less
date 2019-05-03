@@ -1,5 +1,16 @@
 // Mixins Here
 
-.btn-properties() {
-    
+.btn-properties(@bg, @color, @width: 100px, @pad-top: 8px, @pad-bot: 7px) {
+    // Changing Properties:
+    // - background and color for :hover
+    // 
+    // - width and padding(two variables) for @phone
+
+    background: @bg;
+    color: @color;
+    font-size: 2rem;
+    width: @width;
+    text-align: center;
+    padding: @pad-top 0 @pad-bot;
+    border-radius: 5px;
 }
