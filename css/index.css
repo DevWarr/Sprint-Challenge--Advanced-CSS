@@ -145,6 +145,9 @@ h5 {
   font-family: 'Russo One', sans-serif;
   color: #23293B;
 }
+h1 {
+  font-size: 4rem;
+}
 h2 {
   font-size: 3.2rem;
 }
@@ -164,7 +167,23 @@ p {
   height: 100px;
   background: #F6F6F6;
   border-bottom: 2px solid #F1F1F1;
-  color: nav-font;
+  padding: 12px 0;
+}
+.nav-bar h1 {
+  margin-bottom: 15px;
+  width: 100%;
+  text-align: center;
+  height: 50%;
+}
+.nav-bar nav {
+  margin: 15px auto 0;
+  max-width: 500px;
+  display: flex;
+  justify-content: center;
+}
+.nav-bar nav a {
+  text-decoration: none;
+  color: #454A59;
 }
 .home .intro h2 {
   padding: 15px;
