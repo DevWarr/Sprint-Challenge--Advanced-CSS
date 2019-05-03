@@ -40,9 +40,9 @@ A responsive layout is **one layout** that is able to change and resize/reformat
 
 2. Describe what it means to be mobile first vs desktop first.
 
-Mobile first starts with developing a display for mobile-device screens, and then modifying the display as the screen size increases.
+Mobile first starts with developing a display for mobile-device screens, and then modifying the display as the screen size increases. (Use min-width for media queries)
 
-Desktop first starts with developing a display for larger monitor screens, and then modifying the display as the screen size decreases.
+Desktop first starts with developing a display for larger monitor screens, and then modifying the display as the screen size decreases. (Use max-width for media queries)
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 

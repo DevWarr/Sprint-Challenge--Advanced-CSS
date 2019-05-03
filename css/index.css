@@ -247,6 +247,7 @@ p {
   margin-left: 5px;
   display: block;
   opacity: 0;
+  transition: opacity 0.08s linear;
 }
 @media only screen and (max-width: 500px) {
   .home .space-images div {
@@ -255,7 +256,6 @@ p {
 }
 .home .space-images div:hover p {
   opacity: 1;
-  transition: opacity 0.1s linear;
 }
 @media only screen and (max-width: 500px) {
   .home .space-images .blast {
@@ -317,6 +317,15 @@ p {
   .home .walk .walk-text .btn {
     background: #22283A;
     color: #FFFFFF;
+    font-size: 2rem;
+    width: 100%;
+    text-align: center;
+    padding: 25px 0 25px;
+    border-radius: 5px;
+  }
+  .home .walk .walk-text .btn:hover {
+    background: #FFFFFF;
+    color: #22283A;
     font-size: 2rem;
     width: 100%;
     text-align: center;

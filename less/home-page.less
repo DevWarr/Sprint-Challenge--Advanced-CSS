@@ -49,6 +49,7 @@
         margin-left: 5px;
         display: block;
         opacity: 0;
+        transition: opacity 0.08s linear;
       }
 
       //media query: phone:
@@ -62,7 +63,7 @@
       &:hover {
         p {
           opacity: 1;
-          transition: opacity 0.1s linear;
+          
         }
       }
 
@@ -127,6 +128,9 @@
         //media query: phone:
         @media @phone {
           .btn-properties(@btn-bg-color, @white, 100%, 25px, 25px);
+          &:hover {
+            .btn-properties(@white, @btn-bg-color, 100%, 25px, 25px);
+          }
         }
       }
 
