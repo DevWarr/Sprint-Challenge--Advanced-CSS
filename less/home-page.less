@@ -27,21 +27,38 @@
     flex-wrap: wrap;
     width: 100%;
 
-    img {
+    div {
+      display: flex;
+      flex-direction: column;
       width: 28%;
       margin: 20px 2.5%;
-      border-radius: 20px;
       height: 100%;
+
+      img {
+        height: 100%;
+        border-radius: 20px;
+        animation: fade-in 5s;
+
+      }
+
+      p {
+        display: block;
+        visibility: hidden;
+      }
 
       //media query: phone:
       @media @phone {
         //ALL images disappear
         display: none;
       }
+
     }
+
+
 
     //media query: phone:
     @media @phone {
+
       //The Blast image ONLY shows up
       .blast {
         display: block;
