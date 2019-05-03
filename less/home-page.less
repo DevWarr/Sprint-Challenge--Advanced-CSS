@@ -28,22 +28,27 @@
     width: 100%;
 
     div {
+      // background: red;
       display: flex;
       flex-direction: column;
+      align-items: stretch;
       width: 28%;
       margin: 20px 2.5%;
       height: 100%;
 
       img {
-        height: 100%;
+        width: 100%;
+        height: auto;
         border-radius: 20px;
         animation: fade-in 5s;
-
+        
       }
 
       p {
+        margin-top: 10px;
+        margin-left: 5px;
         display: block;
-        visibility: hidden;
+        // visibility: hidden;
       }
 
       //media query: phone:
@@ -53,6 +58,20 @@
       }
 
     }
+
+
+    // Tried changeing a variable based on if an image was hovered,
+    // and then setting the visibility of the lower text to 'visible'.
+    // Didn't work.
+    // .blast {
+    //   @blast: false;
+    //   img:hover {
+    //     @blast: true;
+    //   }
+    //   p {
+    //     visibility: if((@blast), visible, hidden);
+    //   }
+    // }
 
 
 
