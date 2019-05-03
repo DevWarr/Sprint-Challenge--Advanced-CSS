@@ -5,6 +5,9 @@
     background: @nav-bg;
     border-bottom: 2px solid @nav-border;
     padding: 12px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
     h1 {
         margin-bottom: 15px;
@@ -13,12 +16,14 @@
         height: 50%;
     }
     nav {
-        margin: 15px auto 0;
+        margin: 0 auto;
         max-width: 500px;
         display: flex;
         justify-content: center;
 
         a {
+            margin: 0 15px;
+            font-size: 1.6rem;
             text-decoration: none;
             color: @nav-font;
         }
