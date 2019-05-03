@@ -160,6 +160,12 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.nav-bar {
+  height: 100px;
+  background: #F6F6F6;
+  border-bottom: 2px solid #F1F1F1;
+  color: nav-font;
+}
 .home .intro h2 {
   padding: 15px;
 }
