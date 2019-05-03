@@ -6,6 +6,7 @@
 
     img {
       border-radius: 5px;
+      width: 100%;
     }
 
     h2 {
@@ -13,9 +14,9 @@
     }
 
     p {
-      padding:0 15px;
+      padding: 0 15px;
     }
-  
+
   }
 
   .space-images {
@@ -50,6 +51,14 @@
     display: flex;
     justify-content: center;
 
+    // Media Query: phone:
+    @media @phone {
+      //background color test:
+      // background: red;
+      flex-wrap: wrap;
+      padding: 20px;
+    }
+
     .walk-text {
       width: 50%;
 
@@ -63,16 +72,34 @@
 
       .btn {
         .btn-properties(@btn-bg-color, @white);
+
         &:hover {
           .btn-properties(@white, @btn-bg-color);
         }
+
+        //media query: phone:
+        @media @phone {
+          .btn-properties(@btn-bg-color, @white, 100%, 25px, 25px);
+        }
+      }
+
+      //Media Query: phone:
+      @media @phone {
+        width: 100%;
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      
+
+      //media query: phone:
+      @media @phone {
+        order: -1;
+        width: 100%;
+        margin: 0 0 20px;
+      }
+
       img {
         width: 100%;
         height: auto;
@@ -80,4 +107,6 @@
       }
     }
   }
-}// home
+}
+
+// home

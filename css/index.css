@@ -192,6 +192,7 @@ p {
 }
 .home .intro img {
   border-radius: 5px;
+  width: 100%;
 }
 .home .intro h2 {
   padding: 15px;
@@ -226,6 +227,12 @@ p {
   display: flex;
   justify-content: center;
 }
+@media only screen and (max-width: 500px) {
+  .home .walk {
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+}
 .home .walk .walk-text {
   width: 50%;
 }
@@ -253,9 +260,32 @@ p {
   padding: 8px 0 7px;
   border-radius: 5px;
 }
+@media only screen and (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    background: #22283A;
+    color: #FFFFFF;
+    font-size: 2rem;
+    width: 100%;
+    text-align: center;
+    padding: 25px 0 25px;
+    border-radius: 5px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .home .walk .walk-text {
+    width: 100%;
+  }
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
+}
+@media only screen and (max-width: 500px) {
+  .home .walk .walk-img {
+    order: -1;
+    width: 100%;
+    margin: 0 0 20px;
+  }
 }
 .home .walk .walk-img img {
   width: 100%;
