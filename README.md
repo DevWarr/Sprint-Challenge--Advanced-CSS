@@ -34,13 +34,31 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+An adaptive website gets information about the user's device, and then gives the user a different display depending on the device's type. Typically adaptive displays **will have different displays** for phone, tablet, desktop, and sometimes ultrawide monitors.
+
+A responsive layout is **one layout** that is able to change and resize/reformat itself depending on the user's screen size or orientation. 
+
 2. Describe what it means to be mobile first vs desktop first.
+
+Mobile first starts with developing a display for mobile-device screens, and then modifying the display as the screen size increases.
+
+Desktop first starts with developing a display for larger monitor screens, and then modifying the display as the screen size decreases.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+Becasue the default font size is 16px, setting the font size to 62.5% sets the font to 10px. This way, you can set any font size you like by using REM fractions or percentages (`24px = 2.4rem`, `72px = 720%`)
+
 4. How would you describe preprocessing to someone new to CSS?
 
+You know how you have to type each new CSS element on a new line, every time? What if you could format your CSS just like your HTML, by nesting each selector inside each other so the format matches the HTML? It's easier to find the elements you want, and the overall organization of the file is automatically much neater.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+Favorite concept: nesting, 100%.
+
+Once things get more and more complex, I think parametric mixins will come in handy. CSS has 'built in mixins' like `margin` (essentially the mixin would look like `margin(top, right, left, bottom)` with some fancier property set ups), so creating my own mixins to simplify my LESS writing can make my workflow much smoother.
+
+Most trouble? How to assign variables can get confusing. For example: in this project, some elements are assigned a color variable, which is then given a hex value (`@nav-bg: @wild-sand` -> `@wild-sand: #F6F6F6`). However, some variables are just directly given a color (`@btn-bg-color: #22283A`). Once I start typing out all of my own variables, I feel like I could easily start mixing up variables that link to other variables vs variables that go directly to a value.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
