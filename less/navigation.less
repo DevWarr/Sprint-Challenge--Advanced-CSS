@@ -1,1 +1,49 @@
 // Navigation code here
+
+.nav-bar {
+    height: 100px;
+    background: @nav-bg;
+    border-bottom: 2px solid @nav-border;
+    padding: 12px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    // animation: fade-in 5s;
+
+    //Comment out these four lines to make nav stop floating.
+    //COMMENT OUT margin home-page.less also !!
+    position: fixed;
+    top: 0;
+    width: 100%;
+    opacity: 0.9;
+
+    h1 {
+        margin-bottom: 15px;
+        width: 100%;
+        text-align: center;
+        height: 50%;
+        animation: fade-in 5s;
+    }
+    nav {
+        margin: 0 auto;
+        max-width: 500px;
+        .flex-row-center();
+        animation: fade-in 5s;
+
+        a {
+            margin: 0 15px;
+            font-size: 1.6rem;
+            text-decoration: none;
+            color: @nav-font;
+
+
+            //Keeps the nav from turning into two lines when screen is very small
+            &:first-of-type {
+                margin-left: 0;
+            }
+            &:last-of-type {
+                margin-right: 0;
+            }
+        }
+    }
+}

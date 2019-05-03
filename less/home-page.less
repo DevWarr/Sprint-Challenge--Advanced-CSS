@@ -1,17 +1,25 @@
 // Home Content
 
 .home {
+  //Comment this out if you want nav bar not to float
+  //COMMENT OUT properties in navigation.less also !!
+  margin-top: 100px;
 
   .intro {
+
+    img {
+      border-radius: 5px;
+      width: 100%;
+    }
 
     h2 {
       padding: 15px;
     }
 
     p {
-      padding:0 15px;
+      padding: 0 15px;
     }
-  
+
   }
 
   .space-images {
@@ -19,11 +27,57 @@
     flex-wrap: wrap;
     width: 100%;
 
-    img {
+    div {
+      // background: red;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
       width: 28%;
       margin: 20px 2.5%;
-      border-radius: 20px;
       height: 100%;
+      animation: fade-in 5s;
+
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+
+      }
+
+      p {
+        margin-top: 10px;
+        margin-left: 5px;
+        display: block;
+        opacity: 0;
+        transition: opacity 0.08s linear;
+      }
+
+      //media query: phone:
+      @media @phone {
+        //ALL images disappear
+        display: none;
+      }
+
+      // Wow, what an easy fix. Check previous commit if you want to see 
+      // how difficult I was making it.
+      &:hover {
+        p {
+          opacity: 1;
+          
+        }
+      }
+
+    }
+
+    //media query: phone:
+    @media @phone {
+
+      //The Blast image ONLY shows up
+      .blast {
+        display: block;
+        width: 100%;
+        margin: 20px 6%;
+      }
     }
   }
 
@@ -43,8 +97,15 @@
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
-    display: flex;
-    justify-content: center;
+    .flex-row-center();
+
+    // Media Query: phone:
+    @media @phone {
+      //background color test:
+      // background: red;
+      flex-wrap: wrap;
+      padding: 20px;
+    }
 
     .walk-text {
       width: 50%;
@@ -58,13 +119,38 @@
       }
 
       .btn {
+        .btn-properties(@btn-bg-color, @white);
+
+        &:hover {
+          .btn-properties(@white, @btn-bg-color);
+        }
+
+        //media query: phone:
+        @media @phone {
+          .btn-properties(@btn-bg-color, @white, 100%, 25px, 25px);
+          &:hover {
+            .btn-properties(@white, @btn-bg-color, 100%, 25px, 25px);
+          }
+        }
+      }
+
+      //Media Query: phone:
+      @media @phone {
+        width: 100%;
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      
+
+      //media query: phone:
+      @media @phone {
+        order: -1;
+        width: 100%;
+        margin: 0 0 20px;
+      }
+
       img {
         width: 100%;
         height: auto;
@@ -72,4 +158,6 @@
       }
     }
   }
-}// home
+}
+
+// home
