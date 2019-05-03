@@ -190,6 +190,9 @@ p {
   text-decoration: none;
   color: #454A59;
 }
+.home .intro img {
+  border-radius: 5px;
+}
 .home .intro h2 {
   padding: 15px;
 }
