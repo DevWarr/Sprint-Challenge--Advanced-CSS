@@ -41,14 +41,14 @@
         width: 100%;
         height: auto;
         border-radius: 20px;
-        
+
       }
 
       p {
         margin-top: 10px;
         margin-left: 5px;
         display: block;
-        // visibility: hidden;
+        opacity: 0;
       }
 
       //media query: phone:
@@ -57,23 +57,16 @@
         display: none;
       }
 
+      // Wow, what an easy fix. Check previous commit if you want to see 
+      // how difficult I was making it.
+      &:hover {
+        p {
+          opacity: 1;
+          transition: opacity 0.1s linear;
+        }
+      }
+
     }
-
-
-    // Tried changeing a variable based on if an image was hovered,
-    // and then setting the visibility of the lower text to 'visible'.
-    // Didn't work.
-    // .blast {
-    //   @blast: false;
-    //   img:hover {
-    //     @blast: true;
-    //   }
-    //   p {
-    //     visibility: if((@blast), visible, hidden);
-    //   }
-    // }
-
-
 
     //media query: phone:
     @media @phone {

@@ -246,11 +246,16 @@ p {
   margin-top: 10px;
   margin-left: 5px;
   display: block;
+  opacity: 0;
 }
 @media only screen and (max-width: 500px) {
   .home .space-images div {
     display: none;
   }
+}
+.home .space-images div:hover p {
+  opacity: 1;
+  transition: opacity 0.1s linear;
 }
 @media only screen and (max-width: 500px) {
   .home .space-images .blast {
