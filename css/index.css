@@ -235,12 +235,12 @@ p {
   width: 28%;
   margin: 20px 2.5%;
   height: 100%;
+  animation: fade-in 5s;
 }
 .home .space-images div img {
   width: 100%;
   height: auto;
   border-radius: 20px;
-  animation: fade-in 5s;
 }
 .home .space-images div p {
   margin-top: 10px;
